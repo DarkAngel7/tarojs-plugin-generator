@@ -33,14 +33,9 @@ const style = name=>
 }
 `
 
-const config = ()=>`import { PageConfig } from '@tarojs/taro'
-
-const config :PageConfig=  {
-  navigationBarTitleText: 'weChat'
-}
-
-export default config
-`
+const config = ()=>`export default definePageConfig({
+  navigationBarTitleText: 'Wechat'
+})`
 
 function writeFileErrorHandler(err) {
     if (err) throw err;
